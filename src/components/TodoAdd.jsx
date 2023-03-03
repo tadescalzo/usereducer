@@ -22,20 +22,20 @@ export const TodoAdd = ({onNewTodo}) => {
     }
     
 
-  return (
-    <form onSubmit={onFormSubmit} >
-        <input 
-            className="form-control"
-            name='description'
-            onChange={onInputChange}
-            placeholder="¿Que hay que hacer?"
-            type="text" 
-            value={description}
-        />
-        <button 
-        formAction='submit'
-        className='btn btn-primary mt-2'
-        >Agregar</button>        
-    </form>
-  )
+    return (
+        <form onSubmit={onFormSubmit} >
+            <input 
+                className="form-control"
+                name='description'
+                onChange={onInputChange}
+                placeholder="¿Que hay que hacer?"
+                type="text" 
+                value={description}
+            />
+            <button 
+            formAction='submit'
+            className='btn btn-primary mt-2'
+            >Agregar</button>        
+        </form>
+    )
 }
